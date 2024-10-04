@@ -1,3 +1,17 @@
+//VARIÁVEIS
+//CORES
+$cor-primaria: #0C0421;
+$cor-secundaria: #4E75FF;
+$cor-terciaria: #85A0FF;
+$cor-quaternaria: #E8F5C8;
+$cor-default: #CAD4FA;
+$gradiente-primario: linear-gradiente(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+$gradiente-secundario: linear-gradiente(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(202, 212, 250, 0.3) 100%);
+
+//FONTES
+$ft-textos: 'Montserrat', sans-serif;
+$ft-titulos: 'Krona One', sans-serif;
+
 body {
     margin: 0;
     padding: 0;
@@ -5,29 +19,71 @@ body {
 }
 
 header {
-    background: linear-gradient(180deg, #E8F5C8 0%, #FFFFFF 96.87%);
+    background: $gradiente-primario;
     padding: 2rem;
-    nav{
+
+    nav {
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.6rem;
     }
-    .linha{
+    #home{
+        max-width: 1040px;
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .textos-home{
+            max-width: 464px;
+            h1{
+                font-size: 42px;
+                color: $cor-primaria;
+                margin-bottom: 2rem;
+                font-family: $ft-titulos;
+            }
+            span{
+                color: $cor-secundaria;
+            }
+            .btn-main{
+                width: 280px;
+                height: 66px;
+                border-radius: 50px;
+                font-family: $ft-textos;
+                font-weight: 600;
+                color: $cor-quaternaria;
+                font-size: 22px;
+                background-color: $cor-secundaria;
+                
+            }
+        }
+        .img-home{
+            max-width: 474px;
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+    .linha {
         border-top: 1px solid black;
         width: 80%;
     }
-    ul{
+
+    ul {
         display: inline-flex;
         gap: 2rem;
-        li{
+
+        li {
             list-style-type: none;
         }
-        a{
+
+        a {
             text-decoration: none;
-            color: rgba(12, 4, 33, 1);
+            color: $cor-primaria;
             font-weight: 500;
-            font-family: 'Montserrat', sans-serif;
+            font-family: $ft-titulos;
         }
     }
 }
