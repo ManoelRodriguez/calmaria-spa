@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -16,8 +17,8 @@ header nav {
 }
 header #home {
   max-width: 1040px;
-  width: 80%;
   margin: 0 auto;
+  width: 80%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -63,7 +64,27 @@ header ul li {
 }
 header ul a {
   text-decoration: none;
+  font-family: "Krona One", sans-serif;
+  font-size: 1rem;
   color: #0C0421;
   font-weight: 500;
-  font-family: "Krona One", sans-serif;
+}
+
+#nosso-espaco {
+  margin: 0 auto;
+  width: 80%;
+}
+
+.detalhes {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.espaco-textos {
+  flex: 1; /* O texto ocupará 1 unidade de espaço */
+  max-width: 50%; /* Limita a largura do texto a 50% do contêiner */
 }/*# sourceMappingURL=styles.css.map */

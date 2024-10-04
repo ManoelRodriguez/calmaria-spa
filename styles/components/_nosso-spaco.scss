@@ -1,0 +1,19 @@
+@use '../abstract/mixins';
+
+#nosso-espaco{
+    @include mixins.margem-central(80%);
+}
+
+.detalhes{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.espaco-textos {
+    flex: 1; /* O texto ocupará 1 unidade de espaço */
+    max-width: 50%; /* Limita a largura do texto a 50% do contêiner */
+}
