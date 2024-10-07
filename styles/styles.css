@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   margin: 0;
   padding: 0;
@@ -74,17 +73,31 @@ header ul a {
   margin: 0 auto;
   width: 80%;
 }
-
-.detalhes {
-  display: flex;
-  flex-direction: row;
-  gap: 100px;
+#nosso-espaco .detalhes {
+  width: 100%;
+  display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  margin-top: 50px;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem 0;
 }
-
-.espaco-textos {
-  flex: 1; /* O texto ocupará 1 unidade de espaço */
-  max-width: 50%; /* Limita a largura do texto a 50% do contêiner */
+#nosso-espaco .detalhes .imgs-espaco, #nosso-espaco .detalhes .espaco-textos {
+  max-width: 500px;
+}
+#nosso-espaco .detalhes .espaco-textos .titulo {
+  font-family: "Krona One", sans-serif;
+  font-size: 1.8rem;
+  color: #4E75FF;
+  font-weight: 500;
+}
+#nosso-espaco .detalhes .espaco-textos .infos {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.2rem;
+  color: #0C0421;
+}
+#nosso-espaco .detalhes .espaco-textos .separador {
+  width: 100%;
+}
+#nosso-espaco .detalhes:nth-child(2) {
+  flex-direction: row-reverse;
 }/*# sourceMappingURL=styles.css.map */
