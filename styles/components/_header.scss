@@ -36,12 +36,19 @@ header {
             .btn-main {
                 width: 280px;
                 height: 66px;
+                border: none;
                 border-radius: 50px;
                 font-family: variaveis.$ft-textos;
                 font-weight: 600;
                 color: variaveis.$cor-quaternaria;
                 font-size: 22px;
                 background-color: variaveis.$cor-secundaria;
+                opacity: .5;
+                transition: 0.5s ease;
+
+                &:hover {
+                    opacity: 1;
+                }
 
             }
         }
@@ -66,7 +73,16 @@ header {
 
         li {
             list-style-type: none;
+            opacity: .5;
+            transition: 0.5s ease;
+            transform: scale(1);
+
+            &:hover {
+                opacity: 1;
+                transform: scale(1.05);
+            }
         }
+
 
         a {
             text-decoration: none;
