@@ -2,17 +2,14 @@
 @use '../abstract/mixins';
 
 footer {
-    width: 100%;
-    height: 21px;
     background: variaveis.$gradiente-primario;
-    margin: 80px;
+    padding: 1rem 0;
+    width: 100%;
+    margin-top: 40px;
     display: flex;
-    justify-content: center;  
-    align-items: center;      
-
-    p {
+    justify-content: center;
+    align-items: start;
+    small {
         @include mixins.ff-fs-cl(variaveis.$ft-textos, 1.2rem, variaveis.$cor-primaria);
-        margin-top: 100px;
-        
     }
 }
